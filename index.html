@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+  <title>Code Breaker</title>
+</head>
+
+<body>
+  <div class="titel">
+    <h1>|Code Breaker|</h1>
+  </div>
+
+  <!-- Welkomstscherm -->
+  <section class="intro-container" id="intro">
+    <div class="intro-context">
+      <h2>Welkom </h2>
+      <p>Breek de codes. Tik ze exact in voordat de tijd om is. Je hebt 3 pogingen.</p>
+      <button id="startKnop">Start Missie</button>
+    </div>
+  </section>
+
+  <!-- Spelscherm -->
+  <section class="intro-container" id="game">
+    <div class="intro-context">
+      <h2 id="zin">Bereid je voor...</h2>
+      <input type="text" id="invoer" placeholder="Typ hier de code" />
+      <button id="verzendKnop">Verzend Code</button>
+      <p id="timer">Tijd: 20</p>
+      <p id="levens">Pogingen: 3</p>
+      <p id="feedback"></p>
+    </div>
+  </section>
+
+  <!-- Correct ingevulde codes -->
+  <section class="intro-container" id="logboek" style="margin-top: 2em;">
+    <div class="intro-context">
+      <h3>✅ Gekraakte Codes</h3>
+      <ul id="codeLog"></ul>
+    </div>
+  </section>
+
+  <script src="javascript.js"></script>
+</body>
+</html>
